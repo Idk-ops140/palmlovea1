@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PalmLove - Share Your Videos! (BETA)</title>
+    <style>
+        body {
+            background-color: #000080;
+            color: white;
+            font-family: "MS Sans Serif", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .main-container {
+            width: 800px;
+            height: 800px;
+            margin: 20px auto;
+            background-color: #008080;
+            border: 3px solid #c0c0c0;
+            box-shadow: 5px 5px 0px #404040;
+        }
+        
+        .header {
+            background-color: #000080;
+            padding: 10px;
+            border-bottom: 2px solid #c0c0c0;
+        }
+        
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            font-family: "Times New Roman", serif;
+            color: #ffffff;
+            text-shadow: 2px 2px #000000;
+        }
+        
+        .beta-tag {
+            background-color: #ff0000;
+            color: white;
+            font-size: 12px;
+            padding: 2px 5px;
+            position: relative;
+            top: -15px;
+        }
+        
+        .menu-bar {
+            background-color: #c0c0c0;
+            padding: 5px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        
+        .menu-item {
+            color: #000000;
+            text-decoration: none;
+            padding: 2px 10px;
+            border: 1px solid #808080;
+            background-color: #d4d0c8;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        
+        .content-area {
+            width: 90%;
+            height: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 2px inset #c0c0c0;
+            color: #000000;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .status-bar {
+            background-color: #c0c0c0;
+            border-top: 2px solid #808080;
+            padding: 5px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: left;
+            font-size: 12px;
+            color: #000000;
+        }
+        
+        .upload-box {
+            border: 2px solid #808080;
+            background-color: #d4d0c8;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .button {
+            background-color: #d4d0c8;
+            border: 2px outset #ffffff;
+            padding: 3px 8px;
+            color: #000000;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        .counter {
+            font-family: "Courier New", monospace;
+            background-color: #000000;
+            color: #00ff00;
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .watermark {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #c0c0c0;
+            font-style: italic;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td {
+            border: 1px solid #808080;
+            padding: 5px;
+            background-color: #f0f0f0;
+        }
+        
+        th {
+            background-color: #000080;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="logo">PalmLove <span class="beta-tag">BETA</span></div>
+            <div style="font-size: 12px;">Video Sharing for Everyone!</div>
+        </div>
+        
+        <div class="menu-bar">
+            <a href="#" class="menu-item">File</a>
+            <a href="#" class="menu-item">Edit</a>
+            <a href="#" class="menu-item">View</a>
+            <a href="#" class="menu-item">Help</a>
+        </div>
+        
+        <div class="content-area">
+            <h3>Welcome to PalmLove BETA!</h3>
+            <div class="counter">
+                TOTAL VIDEOS: 42 | USERS ONLINE: 7 | SERVER STATUS: OK
+            </div>
+            
+            <div class="upload-box">
+                <div style="margin-bottom: 10px;">Upload your video files (Max size: 2MB)</div>
+                <input type="file" disabled>
+                <button class="button">Upload</button>
+            </div>
+            
+            <table>
+                <tr>
+                    <th>Recent Videos</th>
+                    <th>Size</th>
+                    <th>Uploaded</th>
+                </tr>
+                <tr>
+                    <td>myfunnyvideo.rm</td>
+                    <td>1.2 MB</td>
+                    <td>05/12/02</td>
+                </tr>
+                <tr>
+                    <td>birthday_party.mov</td>
+                    <td>1.8 MB</td>
+                    <td>05/11/02</td>
+                </tr>
+                <tr>
+                    <td>skateboard_trick.avi</td>
+                    <td>0.8 MB</td>
+                    <td>05/11/02</td>
+                </tr>
+                <tr>
+                    <td>my_cat.wmv</td>
+                    <td>0.5 MB</td>
+                    <td>05/10/02</td>
+                </tr>
+            </table>
+            
+            <div style="margin-top: 20px; font-size: 12px;">
+                <b>System Requirements:</b><br>
+                - Windows 98/2000/ME<br>
+                - Internet Explorer 5.0 or higher<br>
+                - RealPlayer 8.0<br>
+                - 56k Modem or faster
+            </div>
+        </div>
+    </div>
+    
+    <div style="font-size: 10px; color: #c0c0c0; margin-top: 5px;">
+        Best viewed in 800x600 resolution
+    </div>
+    
+    <div class="watermark">a FakeWeb project</div>
+</body>
